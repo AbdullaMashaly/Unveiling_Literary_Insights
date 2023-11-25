@@ -1,10 +1,10 @@
 # Goodreads Book Reviews Dataset Exploration
 
 ## Team Members
-    - Abdulla Mashaly [@AbdullaMashaly](https://github.com/AbdullaMashaly)
-    - Jeremy Magee [@JpMageeGitHub](https://github.com/JpMageeGitHub)
-    - Akhil Karandikar [@KarandikarA](https://github.com/KarandikarA)
-    - Lori Girton [@lorigirton](https://github.com/lorigirton)
+- Abdulla Mashaly [@AbdullaMashaly](https://github.com/AbdullaMashaly)
+- Jeremy Magee [@JpMageeGitHub](https://github.com/JpMageeGitHub)
+- Akhil Karandikar [@KarandikarA](https://github.com/KarandikarA)
+- Lori Girton [@lorigirton](https://github.com/lorigirton)
 
 ## Overview
 

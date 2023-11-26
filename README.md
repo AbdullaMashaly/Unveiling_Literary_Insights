@@ -16,7 +16,7 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 ## Data Cleaning Process
 
 1. **Data Loading with Spark:**
-    - The dataset was initially loaded using Spark to efficiently handle a large file. 
+    - The dataset was initially loaded using Spark to efficiently handle the large file. 
 
 2. **Column Selection:**
     - We narrowed down the dataset by keeping only the essential columns, including authors, average rating, country code, format, ebook information, ISBN13, number of pages, popular shelves, publication year, ratings count, series information, text reviews count, title, and author ID.

@@ -63,7 +63,7 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - Navigate to the '/code' directory to access Python scripts for data cleaning, exploration, and modeling.
 
 3. **Review the Data:**
-    - Explore the '/Resources' directory to find the cleaned CSV file.
+    - Explore the '/Resources' directory to find the most cleaned CSV file "books_cleaned_sample3.csv."
 4. **Visualizations:**
     - Visit the '/Visualizations' directory to view visual insights generated during the exploratory data analysis.
 

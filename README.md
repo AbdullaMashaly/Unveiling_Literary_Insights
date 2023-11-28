@@ -70,6 +70,9 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 5. Run the Code:
     - Execute the Python scripts using a Jupyter Notebook or your preferred Python environment.
 
-## Credits
-
+## Citations
+Mengting Wan, Julian McAuley, "Item Recommendation on Monotonic Behavior Chains", in RecSys'18. [bibtex]
+Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley, "Fine-Grained Spoiler Detection from Large-Scale Review Corpora", in ACL'19. [bibtex]
+Wan, Mengting.(2023).goodreads.GitHub.https://github.com/MengtingWan/goodreads
+Ahmad. (2023, October). Goodreads Book Reviews, Version 1. Retrieved November 22, 2023 from https://www.kaggle.com/datasets/pypiahmad/goodreads-book-reviews
 

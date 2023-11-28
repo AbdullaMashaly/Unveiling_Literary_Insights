@@ -16,7 +16,7 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 ## Data Cleaning Process
 
 1. **Data Loading with Spark:**
-    - The dataset was initially loaded using Spark to efficiently handle a large file. 
+    - The dataset was initially loaded using Spark to efficiently handle the large file. 
 
 2. **Column Selection:**
     - We narrowed down the dataset by keeping only the essential columns, including authors, average rating, country code, format, ebook information, ISBN13, number of pages, popular shelves, publication year, ratings count, series information, text reviews count, title, and author ID.
@@ -63,13 +63,16 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - Navigate to the '/code' directory to access Python scripts for data cleaning, exploration, and modeling.
 
 3. **Review the Data:**
-    - Explore the '/Resources' directory to find the cleaned CSV file.
+    - Explore the '/Resources' directory to find the most cleaned CSV file "books_cleaned_sample3.csv."
 4. **Visualizations:**
     - Visit the '/Visualizations' directory to view visual insights generated during the exploratory data analysis.
 
 5. Run the Code:
     - Execute the Python scripts using a Jupyter Notebook or your preferred Python environment.
 
-## Credits
-
+## Citations
+Mengting Wan, Julian McAuley, "Item Recommendation on Monotonic Behavior Chains", in RecSys'18. [bibtex]
+Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley, "Fine-Grained Spoiler Detection from Large-Scale Review Corpora", in ACL'19. [bibtex]
+Wan, Mengting.(2023).goodreads.GitHub.https://github.com/MengtingWan/goodreads
+Ahmad. (2023, October). Goodreads Book Reviews, Version 1. Retrieved November 22, 2023 from https://www.kaggle.com/datasets/pypiahmad/goodreads-book-reviews
 

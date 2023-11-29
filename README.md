@@ -53,7 +53,6 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - After the creation, we gave a numerical value to each column as 0 (if the book did not contain this genre keyword) or a 1 (the book did contain this genre keyword). 
     - We then joined this dataframe with the previous data frame on “book_id."
 
-
 ## Machine Learning Model
 
 1. **Neural Network Model:**

@@ -57,11 +57,6 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 ## Machine Learning Model
 
 1. **Neural Network Model:**
-    - Due to the diverse set of features and the objective of predicting a single variable from various inputs, a neural network model was implemented.
-
-## Machine Learning Model
-
-1. **Neural Network Model:**
     - Due to the diverse set of features and the objective of predicting a single variable from various inputs, a neural network model was implemented. 
     - The machine learning model must demonstrate meaningful predictive power of at least 75% classification accuracy or 0.80 R-squared.
     - After multiple tries, we were only able to get a R-squared value from .048 (first try) to .0536 (last try).
@@ -106,5 +101,5 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 Mengting Wan, Julian McAuley, "Item Recommendation on Monotonic Behavior Chains", in RecSys'18. [bibtex]
 Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley, "Fine-Grained Spoiler Detection from Large-Scale Review Corpora", in ACL'19. [bibtex]
 Wan, Mengting.(2023).goodreads.GitHub.https://github.com/MengtingWan/goodreads
-Ahmad. (2023, October). Goodreads Book Reviews, Version 1. Retrieved November 22, 2023 from https://www.kaggle.com/datasets/pypiahmad/goodreads-book-reviews
+Ahmad. (2023, October). Goodreads Book Reviews, Version 1. Retrieved November 22, 2023 from https://www.kaggle.com/datasets/pypiahmad/goodreads-book-reviews1
 

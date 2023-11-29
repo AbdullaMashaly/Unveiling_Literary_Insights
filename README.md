@@ -71,13 +71,13 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - The machine learning model must demonstrate meaningful predictive power of at least 75% classification accuracy or 0.80 R-squared.
     - After multiple tries, we were only able to get a R-squared value from .048 (first try) to .0536 (last try). The visuals for distribution 1 shows the distribution of the actual vs. predicted ratings and distribution 2 shows how close the predictions were to the actual ratings. Distribution 3 is another way of looking at the actual versus predicted ratings in our Neural Network model.
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/NN1.png" alt="distribution 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/lori/Visuals/NNetwork1.png" alt="distribution 1" width="200" height="200">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/NN2.png" alt="distribution 2" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/lori/Visuals/NNetwork2.png" alt="distribution 2" width="200" height="200">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/NN3.png" alt="distribution 3" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/lori/Visuals/NNetwork3.png" alt="distribution 3" width="200" height="200">
     </p>
 
 
@@ -117,6 +117,9 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 
 -**/EDA:** Contains the Python scripts used for data exploration.
 -**/ML Models:** Includes the script for the different models we explored.
+    -**Notebooks:** For Linear Regression Model 1 & 2, Random Forest and the original Neural Network Tuner
+    -**NN_Tuner_Trial2:** Includes the second data cleaning files and the second Neural Network Tuner
+    -**NN_Tuner_Whole_Data:** Include the files for the final data cleaning and the final Neural Network Tuner
 -**//Resources:** Holds the csv files created after data cleaning.
 -**//Visuals:** Contains the png files used in Presentation and README.
 -**No folder:** Contains, gitignor, data preprocessing, and README files.

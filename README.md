@@ -15,27 +15,30 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 
 ## Data Cleaning Process
 
-1. **Data Loading with Spark:** ![Alt Text](https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/PySpark.png)
-    - The dataset was initially loaded using Spark to efficiently handle the large file. 
-    -`Data_Import.ipynb` file utilized Spark to read in the large dataset, create a dataframe, repartition the DataFrame into smaller chunks and write them into separate files. We then read these files back in and dropped columns we did not think would be helpful (`['asin','country_code', 'book_id','description', 'isbn', 'similar_books', 'title_without_series','is_ebook', 'work_id' , 'link', 'image_url', 'url', 'edition_information', 'kindle_asin','language_code', 'publication_day', 'publication_month', 'publisher', 'title']`) and were left with the following columns:
+1. **Data Loading with Spark:** 
+![Alt Text](https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/PySpark.png)
+    - The dataset was initially loaded using Spark to efficiently handle the large file is (`Data_partitioning.ipynb`). This notebook demonstrates the process of data partitioning using Apache Spark. It covers the steps of reading a large JSON dataset, inspecting its schema and size, repartitioning it into smaller chunks for efficient processing, and then writing these partitions back to disk. This approach is essential for handling and processing large datasets effectively in Spark.. 
+    -`Data_Import.ipynb` file utilized Spark to read in repartitioned files back in and dropped columns we did not think would be helpful (`['asin','country_code', 'book_id','description', 'isbn', 'similar_books', 'title_without_series','is_ebook', 'work_id' , 'link', 'image_url', 'url', 'edition_information', 'kindle_asin','language_code', 'publication_day', 'publication_month', 'publisher', 'title']`). and were left with the following columns:
     ![Alt Text](https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/Column%20Names.png)
-    -Next rows with emply strings were filtered out as well as rows with empty strings in any column. 
+    - Next rows with empty strings were filtered out as well as rows with empty strings in any column. 
     - We dropped duplicate ‘isbn13’. A new column was created named “to_read_count” was created after exploding the “popular_shelves” array and capturing the number of people who had the book in their “To read” cart. After the creation, we dropped the “popular_shelves” column. 
-    -We then joined the original DataFrame with the aggregated DataFrame on the “isbn13” column, made the column ‘series’ binary. We then made `df_authors_exploded` DataFrame by selecting only the “authors”, and “isbn13” columns from the main df. We exploded the “author” column and created “unique_author_id” column and dropped the “author” column. We then created a CSV ("books_cleaned_sample") out of the final column. 
+    - We then joined the original DataFrame with the aggregated DataFrame on the “isbn13” column, made the column ‘series’ binary. We then made `df_authors_exploded` DataFrame by selecting only the “authors”, and “isbn13” columns from the main df. We exploded the “author” column and created “unique_author_id” column and dropped the “author” column. We then created a CSV ("books_cleaned_sample") out of the final column. 
 
 2. **Column Selection:**
     - We narrowed down the dataset by keeping only the essential columns, including authors, average rating, country code, format, ebook information, ISBN13, number of pages, popular shelves, publication year, ratings count, series information, text reviews count, title, and author ID.
 
-3. **Data Filtering**
+3. **Data Filtering:**
     - Formats were further filtered to include only paperback, ebooks, and hardcover.
     - Duplicate records with the same ISBN13 were dropped.
     - Records with null values were removed to ensure data quality.
 
-4. **Series Encoding:**
-    - A binary column, 'series', was created to indicate whether a book is part of a series (1) or not (0).
+4. **Feature Engineering:**
+    - Series Encoding: A binary column, 'series', was created to indicate whether a book is part of a series (1) or not (0).
+    - Authors: Author columns was replaced by author's average rating, by merging data from Detailed Information of Authors (goodreads_book_authors.json.gz), average of authors average ratings where taken for books with more than one author
+    - Formats: The three most popular formats Paperback, Hardcover and Ebook where kept the same and the rest of formats where aggreagated together as other.  
 
 5. **Pandas DataFrame and CSV Export:**
-    - The cleaned data was converted to a Pandas DataFrame, making it more manageable. 
+    - A sample of cleaned data was converted to a Pandas DataFrame, making it more manageable. 
     - The final cleaned dataset was exported to a CSV file and shared with the team.
 
 ## Data Exploration

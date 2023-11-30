@@ -51,15 +51,15 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - Visualizations were created to explore the distribution of key features, such as average rating, number of pages, and publication year in "EDA_sample". There were several records with year published after 2023 (scatter plot 1). After taking these out, there were still other published years too far back (scatter plot 2). We also noticed the column with number of pages had over half the records with 0 pages (bar graph 1). Identifying these outliers in the 'num_pages' and 'publication_year' columns, allowed for a more focused analysis.
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1a.png" alt="scatter plot 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1a.png" alt="scatter plot 1" width="500">
     </p>
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1b.png" alt="scatter plot 2" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1b.png" alt="scatter plot 2" width="500">
     </p>
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1c.png" alt="bar graph 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1c.png" alt="bar graph 1" width="500">
     </p>
 
 
@@ -131,19 +131,19 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 2. **Linear Regression Model:**
     - We noticed in the initial EDA that there was a linear relationship between average rating and author average rating (scatter plot 3) and decided to look at other features (scatter plots 4 & 5) which may have linear relationships to try a Linear Regression Model.  We also used an imputer in this model to account for outliers. The first try returned a .513 R-squared value with the original cleaned data. We tried changing the features used as well as including the more clean sample 3 data with no improvement in R-squared value. This model performed with a MSE 0.12 and R-Squared value of 0.52 (image 1). The second model where we plugged in a cleaner dataset provided a less reliable model with a R-Squared value of 0.48 (image 2). We believe this could be due to the imputer being used to plug in the mean for data with outliers and once those outliers were removed, it was less predictive.
    <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3a.png" alt="scatter plot 3" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3a.png" alt="scatter plot 3" width="500">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3b.png" alt="scatter plot 4" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3b.png" alt="scatter plot 4" width="500">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3c.png" alt="scatter plot 5" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA3c.png" alt="scatter plot 5" width="500">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/LR1.png" alt="image 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/LR1.png" alt="image 1" width="500">
     </p>
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/LR2.png" alt="image 2" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/LR2.png" alt="image 2" width="500">
     </p>
     
 
@@ -152,10 +152,10 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     -Since we were not able to improve on either of the first two regression models, we decided to bin our data into the following bins: `[0, 1, 2, 3, 4, 5]`, labels `[0, 1, 2, 3, 4]`, `include_lowest=True` to make the data ready for a classification model. We chose the Random Forest model because it is commonly used for classification tasks where the goal is to predict the class or category of an input based on its features.
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/RF1.png" alt="image 3" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/RF1.png" alt="image 3" width="500">
     </p>
    <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/RF2.png" alt="image 4" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/RF2.png" alt="image 4" width="500">
     </p>
 
 

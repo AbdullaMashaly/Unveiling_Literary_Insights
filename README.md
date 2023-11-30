@@ -51,15 +51,15 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
     - Visualizations were created to explore the distribution of key features, such as average rating, number of pages, and publication year in "EDA_sample". There were several records with year published after 2023 (scatter plot 1). After taking these out, there were still other published years too far back (scatter plot 2). We also noticed the column with number of pages had over half the records with 0 pages (bar graph 1). Identifying these outliers in the 'num_pages' and 'publication_year' columns, allowed for a more focused analysis.
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1a.png" alt="scatter plot 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1a.png" alt="scatter plot 1" width="500">
     </p>
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1b.png" alt="scatter plot 2" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1b.png" alt="scatter plot 2" width="500">
     </p>
 
     <p align="center">
-        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1c.png" alt="bar graph 1" width="200" height="200">
+        <img src="https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/EDA1c.png" alt="bar graph 1" width="500">
     </p>
 
 

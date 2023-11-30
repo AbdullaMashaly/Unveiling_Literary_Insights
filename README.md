@@ -17,7 +17,7 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
 
 1. **Data Loading with Spark:** 
 
-![Alt Text](https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/PySpark.png)
+    ![Alt Text](https://github.com/AbdullaMashaly/Project_4/blob/main/Visuals/PySpark.png)
 
     - The dataset was initially loaded using Spark to efficiently handle the large file is (`Data_partitioning.ipynb`). This notebook demonstrates the process of data partitioning using Apache Spark. It covers the steps of reading a large JSON dataset, inspecting its schema and size, repartitioning it into smaller chunks for efficient processing, and then writing these partitions back to disk. This approach is essential for handling and processing large datasets effectively in Spark.. 
     -`Data_Import.ipynb` file utilized Spark to read in repartitioned files back in and dropped columns we did not think would be helpful (`['asin','country_code', 'book_id','description', 'isbn', 'similar_books', 'title_without_series','is_ebook', 'work_id' , 'link', 'image_url', 'url', 'edition_information', 'kindle_asin','language_code', 'publication_day', 'publication_month', 'publisher', 'title']`). and were left with the following columns:
@@ -91,18 +91,18 @@ The original dataset can be found on Kaggle: [Goodreads Book Reviews](https://ww
         - **R-squared**: 0.4824
     - Visualizations: The scatter plot displays the correlation between actual and predicted ratings, indicating model accuracy with points close to the red line of perfect prediction. The residuals plot highlights prediction errors, where points near the horizontal line suggest smaller residuals and better model performance. The distribution plot compares the overall trend in actual and predicted ratings, with similar shapes implying that the model captures the general pattern in the data. Below are the plots illustrating the actual vs. predicted ratings and the distribution of these ratings.
     - For more details on the analysis, refer to [NN_tuner notebook](ML%20Models/NN_Tuner.ipynb).
-<p>
-<img src="Visuals/NN1.png" alt="Actual vs Predicted Ratings" width="500"/>
-<img src="Visuals/NN1_Residual.png" alt="Residuals Plot" width="500"/>
-<img src="Visuals/NN1_distribution.png" alt="Distribution of Ratings" width="500"/>
-</p>
+    <p>
+    <img src="Visuals/NN1.png" alt="Actual vs Predicted Ratings" width="500"/>
+    <img src="Visuals/NN1_Residual.png" alt="Residuals Plot" width="500"/>
+    <img src="Visuals/NN1_distribution.png" alt="Distribution of Ratings" width="500"/>
+    </p>
 
     **Final Trial:**
     - The model was constructed using a sequential API with multiple dense layers. The hyperparameters were optimized using Keras Tuner, which determined the best combination of activation functions, number of neurons, and learning rate.
     - The dataset used for the final model excluded ratings below 1 and ratings counts below 10.
     - The model was first validated using a 10% sample of the data, achieving an R-squared value of 0.5824, before being trained on the full dataset.
     - Model Summary: The model was trained on the dataset with the following configurations:
-        - Activation function: `tanh`
+        - Activation function: tanh
         - Input units: 180
         - Number of layers: 3
         - Dense layer units: Varying from 192 to 64
